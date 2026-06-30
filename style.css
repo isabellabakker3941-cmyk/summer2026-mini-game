@@ -1,40 +1,30 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background: #ffe6f2;
+#scramble-box {
+  margin-top: 30px;
 }
 
-.screen {
-  padding-top: 80px;
+.letter-btn {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 20px;
+  border: none;
+  background: #ff99cc;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.hidden {
-  display: none;
+.letter-btn:disabled {
+  background: #ffccd9;
+  cursor: default;
 }
 
-/* Heart (hidden at first) */
-#heart {
-  width: 60px;
-  height: 60px;
-  background: red;
-  position: absolute;
-  border-radius: 50% 50% 0 0;
-  transform: rotate(-45deg);
-  opacity: 0;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+#answer-box {
+  margin-top: 20px;
+  font-size: 28px;
+  letter-spacing: 10px;
 }
 
-/* Wiggle animation when found */
-#heart.found {
-  opacity: 1;
-  animation: wiggle 0.8s ease;
-}
-
-@keyframes wiggle {
-  0% { transform: rotate(-45deg) scale(1); }
-  25% { transform: rotate(-40deg) scale(1.1); }
-  50% { transform: rotate(-50deg) scale(1); }
-  75% { transform: rotate(-40deg) scale(1.1); }
-  100% { transform: rotate(-45deg) scale(1); }
+.answer-slot {
+  display: inline-block;
+  width: 30px;
 }
