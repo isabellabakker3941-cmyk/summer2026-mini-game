@@ -1,3 +1,44 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background: linear-gradient(#ffe6f2, #ffcce0);
+  min-height: 100vh;
+}
+
+/* Screens */
+.screen {
+  padding-top: 80px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Start + Reveal buttons */
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  background: #ff66b3;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #ff85c2;
+}
+
+/* Instruction text */
+.instruction {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Scramble letters */
 #scramble-box {
   margin-top: 30px;
 }
@@ -18,6 +59,7 @@
   cursor: default;
 }
 
+/* Answer blanks */
 #answer-box {
   margin-top: 20px;
   font-size: 28px;
@@ -27,4 +69,11 @@
 .answer-slot {
   display: inline-block;
   width: 30px;
+}
+
+/* Reveal screen */
+#message {
+  font-size: 22px;
+  margin-top: 30px;
+  padding: 0 20px;
 }
