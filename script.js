@@ -13,7 +13,7 @@ const scrambleBox = document.getElementById("scramble-box");
 const answerBox = document.getElementById("answer-box");
 
 // MULTI-WORD PHRASE
-const phrase = "I LOVE YOU POOKIE";
+const phrase = "HEWO POOKIE";
 
 let scrambled = "";
 let answer = [];
